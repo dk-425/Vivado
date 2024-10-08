@@ -1,0 +1,167 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0x86C318BFCE8ECFC0",
+      "device": "xczu28dr-ffvg1517-2-e",
+      "name": "design_1",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2019.2",
+      "validated": "true"
+    },
+    "design_tree": {
+      "adder_0": "",
+      "clk_wiz_0": "",
+      "ila_0": ""
+    },
+    "interface_ports": {
+      "default_sysclk3_100mhz": {
+        "mode": "Slave",
+        "vlnv": "xilinx.com:interface:diff_clock_rtl:1.0",
+        "parameters": {
+          "CAN_DEBUG": {
+            "value": "false",
+            "value_src": "default"
+          },
+          "FREQ_HZ": {
+            "value": "100000000"
+          }
+        }
+      }
+    },
+    "ports": {
+      "a_0": {
+        "direction": "I"
+      },
+      "b_0": {
+        "direction": "I"
+      },
+      "c_0": {
+        "direction": "I"
+      },
+      "carry_0": {
+        "direction": "O"
+      },
+      "sum_0": {
+        "direction": "O"
+      }
+    },
+    "components": {
+      "adder_0": {
+        "vlnv": "xilinx.com:module_ref:adder:1.0",
+        "xci_name": "design_1_adder_0_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "adder",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "a": {
+            "direction": "I"
+          },
+          "b": {
+            "direction": "I"
+          },
+          "c": {
+            "direction": "I"
+          },
+          "sum": {
+            "direction": "O"
+          },
+          "carry": {
+            "direction": "O"
+          }
+        }
+      },
+      "clk_wiz_0": {
+        "vlnv": "xilinx.com:ip:clk_wiz:6.0",
+        "xci_name": "design_1_clk_wiz_0_0",
+        "parameters": {
+          "CLK_IN1_BOARD_INTERFACE": {
+            "value": "default_sysclk3_100mhz"
+          },
+          "RESET_PORT": {
+            "value": "reset"
+          },
+          "RESET_TYPE": {
+            "value": "ACTIVE_HIGH"
+          },
+          "USE_BOARD_FLOW": {
+            "value": "true"
+          },
+          "USE_LOCKED": {
+            "value": "false"
+          },
+          "USE_RESET": {
+            "value": "false"
+          }
+        }
+      },
+      "ila_0": {
+        "vlnv": "xilinx.com:ip:ila:6.2",
+        "xci_name": "design_1_ila_0_1",
+        "parameters": {
+          "C_ENABLE_ILA_AXI_MON": {
+            "value": "false"
+          },
+          "C_MONITOR_TYPE": {
+            "value": "Native"
+          },
+          "C_NUM_OF_PROBES": {
+            "value": "5"
+          }
+        }
+      }
+    },
+    "interface_nets": {
+      "default_sysclk3_100mhz_1": {
+        "interface_ports": [
+          "default_sysclk3_100mhz",
+          "clk_wiz_0/CLK_IN1_D"
+        ]
+      }
+    },
+    "nets": {
+      "a_0_1": {
+        "ports": [
+          "a_0",
+          "adder_0/a",
+          "ila_0/probe0"
+        ]
+      },
+      "b_0_1": {
+        "ports": [
+          "b_0",
+          "adder_0/b",
+          "ila_0/probe1"
+        ]
+      },
+      "c_0_1": {
+        "ports": [
+          "c_0",
+          "adder_0/c",
+          "ila_0/probe2"
+        ]
+      },
+      "adder_0_carry": {
+        "ports": [
+          "adder_0/carry",
+          "carry_0",
+          "ila_0/probe4"
+        ]
+      },
+      "adder_0_sum": {
+        "ports": [
+          "adder_0/sum",
+          "sum_0",
+          "ila_0/probe3"
+        ]
+      },
+      "clk_wiz_0_clk_out1": {
+        "ports": [
+          "clk_wiz_0/clk_out1",
+          "ila_0/clk"
+        ]
+      }
+    }
+  }
+}

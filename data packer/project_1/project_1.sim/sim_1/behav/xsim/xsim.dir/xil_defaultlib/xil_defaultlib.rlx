@@ -1,0 +1,10 @@
+0.6
+2019.2
+Nov  6 2019
+21:42:20
+/media/sampath/1TBhdd/Xilinx_Vivado_2019.2_1106_2127/project_1/project_1.sim/sim_1/behav/xsim/glbl.v,1573089660,verilog,,,,glbl,,,,,,,,
+/media/sampath/1TBhdd/Xilinx_Vivado_2019.2_1106_2127/project_1/project_1.srcs/sim_1/new/packer_tb.v,1727952688,verilog,,,,packer_tb,,,,,,,,
+/media/sampath/1TBhdd/Xilinx_Vivado_2019.2_1106_2127/project_1/project_1.srcs/sim_1/new/top_tb.v,1728019043,verilog,,,,top_tb,,,,,,,,
+/media/sampath/1TBhdd/Xilinx_Vivado_2019.2_1106_2127/project_1/project_1.srcs/sources_1/new/generator.v,1728019878,verilog,,/media/sampath/1TBhdd/Xilinx_Vivado_2019.2_1106_2127/project_1/project_1.srcs/sources_1/new/packer.v,,generator,,,,,,,,
+/media/sampath/1TBhdd/Xilinx_Vivado_2019.2_1106_2127/project_1/project_1.srcs/sources_1/new/packer.v,1727952489,verilog,,/media/sampath/1TBhdd/Xilinx_Vivado_2019.2_1106_2127/project_1/project_1.srcs/sources_1/new/top.v,,packer,,,,,,,,
+/media/sampath/1TBhdd/Xilinx_Vivado_2019.2_1106_2127/project_1/project_1.srcs/sources_1/new/top.v,1728019278,verilog,,/media/sampath/1TBhdd/Xilinx_Vivado_2019.2_1106_2127/project_1/project_1.srcs/sim_1/new/top_tb.v,,top,,,,,,,,
